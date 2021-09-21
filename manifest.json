@@ -1,0 +1,14 @@
+{
+  "name": "UI2 Icons",
+  "id": "1022174189689277620",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma", "figjam"],
+  "parameterOnly": true,
+  "parameters": [
+    {
+      "name": "Icon name",
+      "key": "icon-name"
+    }
+  ]
+}
