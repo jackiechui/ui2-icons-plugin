@@ -1494,8 +1494,7 @@ const icons = [
         data: "a6ff7472a38a19b7975a99da272a3b6a1bc807e3",
     },
 ];
-figma.parameters.on("input", (parameters, currentKey, result) => {
-    const query = parameters[currentKey];
+figma.parameters.on("input", ({ parameters, key, query, result }) => {
     const filteredIcons = icons
         .filter((s) => s.name.toLowerCase().includes(query.toLowerCase()))
         .map((icon) => icon);

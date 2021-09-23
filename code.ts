@@ -1498,12 +1498,9 @@ const icons = [
 figma.parameters.on(
   "input",
   (
-    parameters: ParameterValues,
-    currentKey: string,
-    result: SuggestionResults
+    { parameters, key, query, result }
   ) => {
-    const query = parameters[currentKey];
-    const filteredIcons: Suggestion[] = icons
+    const filteredIcons = icons
       .filter((s) => s.name.toLowerCase().includes(query.toLowerCase()))
       .map((icon) => icon);
     result.setSuggestions(filteredIcons);
