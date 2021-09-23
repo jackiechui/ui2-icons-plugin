@@ -1,4 +1,4 @@
-UI2 plugins
+UI2 Icon Plugin
 ===
 
 This plugin demonstrates the usage of parameters with icons in the suggestions list.
